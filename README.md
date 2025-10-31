@@ -30,18 +30,19 @@ Supports multiple programming languages
 🏗 Architecture Overview
 
 Browser UI
-│
-│ POST /api/review
-▼
+   │
+   │  POST /api/review
+   ▼
 Cloudflare Worker (router)
-│
-│ forwards request
-▼
+   │
+   │ forwards request
+   ▼
 Durable Object (stateful agent)
-│
-├─ Calls Workers AI (LLM inference)
-├─ Stores review history in SQLite
-└─ Returns structured feedback
+   │
+   ├─ Calls Workers AI (LLM inference)
+   ├─ Stores review history in SQLite
+   └─ Returns structured feedback
+
 
 Key Components
 
