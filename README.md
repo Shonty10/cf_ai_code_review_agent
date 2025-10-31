@@ -7,6 +7,9 @@ Paste code → Get structured review → Automatically stored in history → Ret
 
 https://code-review-agent.shaunaksaxena.workers.dev/
 
+![Code Review Assistant Demo](screenshot.png)
+*Paste any code snippet → Get instant AI-powered feedback*
+
 ✨ Features
 
 Real-time reviews using Workers AI (Llama 3.3 70B FP8 Fast)
@@ -58,10 +61,11 @@ Key Components
 🧠 API Endpoints
 1) Run a Code Review
 
-curl -X POST https://code-review-agent.shaunaksaxena.workers.dev/api/review
-
--H "content-type: application/json"
--d '{"language":"Python","code":"def f(x): return x==x"}'
+```bash
+curl -X POST https://code-review-agent.shaunaksaxena.workers.dev/api/review \
+  -H "Content-Type: application/json" \
+  -d '{"language":"Python","code":"def f(x): return x==x"}'
+```
 
 2) Get Review History
 
