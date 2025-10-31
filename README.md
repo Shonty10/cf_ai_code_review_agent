@@ -29,6 +29,7 @@ Supports multiple programming languages
 
 🏗 Architecture Overview
 
+```text
 Browser UI
    │
    │  POST /api/review
@@ -42,6 +43,7 @@ Durable Object (stateful agent)
    ├─ Calls Workers AI (LLM inference)
    ├─ Stores review history in SQLite
    └─ Returns structured feedback
+```
 
 
 Key Components
