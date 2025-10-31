@@ -44,11 +44,14 @@ Durable Object (stateful agent)
 └─ Returns structured feedback
 
 Key Components
-Component	Technology
-Compute	Cloudflare Workers (TypeScript)
-AI Model	@cf/meta/llama-3.3-70b-instruct-fp8-fast
-State & Memory	Durable Object + Built-in SQLite
-Frontend	HTML / CSS / JavaScript (served by the Worker)
+
+| Component       | Technology                                              |
+|----------------|----------------------------------------------------------|
+| Compute        | Cloudflare Workers (TypeScript)                           |
+| AI Model       | `@cf/meta/llama-3.3-70b-instruct-fp8-fast`               |
+| State & Memory | Durable Object + Built-in SQLite                          |
+| Frontend       | HTML / CSS / JavaScript                                   |
+
 🧠 API Endpoints
 1) Run a Code Review
 
