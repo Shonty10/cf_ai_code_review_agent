@@ -1,0 +1,26 @@
+# (unchanged) bindings
+name = "code-review-agent"
+main = "src/index.ts"
+compatibility_date = "2025-01-15"
+
+[ai]
+binding = "AI"
+
+[observability]
+enabled = true
+
+[[durable_objects.bindings]]
+name = "CODE_REVIEW_AGENT"
+class_name = "CodeReviewAgent"
+
+# --- APPEND these, bumping tags above your current highest tag ---
+
+# Add the new class to the script's DO configuration
+[[migrations]]
+tag = "v2"                # <-- bump if needed (v3, v4, ...)
+new_sqlite_classes = ["CodeReviewAgent"]
+
+# (Optional) remove the old class after the new one is live
+[[migrations]]
+tag = "v3"                # <-- next tag
+deleted_classes = ["Chat"]
